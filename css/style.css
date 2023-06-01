@@ -1556,13 +1556,13 @@ Omnifood grid
     }
 }
 */
-.main-nav-list {
+.main-nav__list {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 4.8rem; }
 
-.main-nav-link:link, .main-nav-link:visited {
+.main-nav__link:link, .main-nav__link:visited {
   display: inline-block;
   text-decoration: none;
   color: #333;
@@ -1570,19 +1570,51 @@ Omnifood grid
   font-size: 1.8rem;
   transition: all 0.3s; }
 
-.main-nav-link:hover, .main-nav-link:active {
-  color: #cf711f; }
+.main-nav__link:hover, .main-nav__link:active {
+  color: #ffb900; }
 
-.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
+.main-nav__link--nav-cta:link, .main-nav__link--nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #e67e22; }
+  background-color: #ffb900;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s; }
 
-.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
-  background-color: #cf711f; }
+.main-nav__link--nav-cta:hover, .main-nav__link--nav-cta:active {
+  background-color: #ffb900; }
 
 /*
+.main-nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+.main-nav-link:link, .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+.main-nav-link:hover, .main-nav-link:active {
+    color: #cf711f;
+}
+.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e67e22;
+}
+.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
+    background-color: #cf711f;
+}
+
+
 .navigation {
     &__checkbox {
         display: none;
